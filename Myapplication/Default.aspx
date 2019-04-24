@@ -13,18 +13,18 @@
             margin-left: 120px;
         }
         .auto-style7 {
-            width: 518px;
+            width: 555px;
         }
         .auto-style8 {
             height: 23px;
-            width: 518px;
+            width: 555px;
         }
         .auto-style9 {
             width: 174px;
             height: 25px;
         }
         .auto-style10 {
-            width: 518px;
+            width: 555px;
             height: 25px;
         }
         .auto-style11 {
@@ -37,7 +37,7 @@
         }
         .auto-style13 {
             height: 22px;
-            width: 518px;
+            width: 555px;
         }
         .auto-style14 {
             height: 22px;
@@ -48,7 +48,7 @@
         }
         .auto-style16 {
             height: 24px;
-            width: 518px;
+            width: 555px;
         }
         .auto-style17 {
             height: 24px;
@@ -178,6 +178,8 @@
                 </td>
                 <td class="auto-style8">
                     <asp:TextBox ID="txtEmail" runat="server" Width="262px"></asp:TextBox>
+                &nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="valEmailRegEx" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter the correct email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
