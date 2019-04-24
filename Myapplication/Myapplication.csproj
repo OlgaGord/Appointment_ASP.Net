@@ -70,6 +70,7 @@
     <Content Include="Default.aspx" />
     <Content Include="images\Logo.png" />
     <Content Include="css\style.css" />
+    <Content Include="UserRegistration.aspx" />
     <Content Include="Web.config" />
     <Content Include="Appointment.aspx" />
   </ItemGroup>
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="Appointment.aspx.designer.cs">
       <DependentUpon>Appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

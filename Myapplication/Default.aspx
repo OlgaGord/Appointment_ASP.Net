@@ -31,6 +31,29 @@
             height: 25px;
         }
        
+        .auto-style12 {
+            height: 22px;
+            width: 174px;
+        }
+        .auto-style13 {
+            height: 22px;
+            width: 518px;
+        }
+        .auto-style14 {
+            height: 22px;
+        }
+        .auto-style15 {
+            height: 24px;
+            width: 174px;
+        }
+        .auto-style16 {
+            height: 24px;
+            width: 518px;
+        }
+        .auto-style17 {
+            height: 24px;
+        }
+       
     </style>
 
 </head>
@@ -55,9 +78,14 @@
                     <asp:RequiredFieldValidator ID="ReqValidatorID" runat="server" ErrorMessage="Last Name Required" ControlToValidate="txtLastName" BackColor="White" ForeColor="Red"></asp:RequiredFieldValidator>
         </p>
         <p>
-            &nbsp;</p>
+                    <asp:RequiredFieldValidator ID="ReqValidatorID0" runat="server" ErrorMessage="First Name Required" ControlToValidate="txtFirstName" BackColor="White" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
         <p>
-            &nbsp;</p>
+            <asp:RangeValidator ID="validWeight" runat="server" ControlToValidate="txtWeight" ErrorMessage="Weight must be with accepted range" ForeColor="Red" MaximumValue="180" MinimumValue="35" Type="Double"></asp:RangeValidator>
+        </p>
+        <p>
+            <asp:RangeValidator ID="validHeight" runat="server" ControlToValidate="txtHeight" ErrorMessage="Height must be with accepted range" ForeColor="Red" MaximumValue="250" MinimumValue="120" Type="Double"></asp:RangeValidator>
+        </p>
         <table class="auto-style2">
             <tr>
                 <td class="auto-style4">
@@ -65,7 +93,7 @@
                 &nbsp;&nbsp;
                 </td>
                 <td class="auto-style7">
-                    <asp:TextBox ID="txtCustomerID" runat="server" Width="263px"></asp:TextBox>
+                    <asp:TextBox ID="txtCustomerID" runat="server" Width="263px" CausesValidation="True"></asp:TextBox>
                 &nbsp;&nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCustomerID" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -78,7 +106,7 @@
                     <asp:Label ID="lblLastName" runat="server" Text="Last Name"></asp:Label>
                     </td>
                 <td class="auto-style8">
-                    <asp:TextBox ID="txtLastName" runat="server" Width="262px"></asp:TextBox>
+                    <asp:TextBox ID="txtLastName" runat="server" Width="262px" CausesValidation="True"></asp:TextBox>
                     &nbsp;&nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtLastName" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -91,7 +119,9 @@
                     <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
                     </td>
                 <td class="auto-style10">
-                    <asp:TextBox ID="txtFirstName" runat="server" Width="262px"></asp:TextBox>
+                    <asp:TextBox ID="txtFirstName" runat="server" Width="262px" CausesValidation="True"></asp:TextBox>
+                    &nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtFirstName" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 <td class="auto-style11">
                     </td>
@@ -190,12 +220,27 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style5">
-                    &nbsp;</td>
-                <td class="auto-style8">
-                    &nbsp;</td>
-                <td class="auto-style3">
-                    &nbsp;</td>
+                <td class="auto-style12">
+                    <asp:Label ID="lblWeight" runat="server" Text="Weight"></asp:Label>
+                </td>
+                <td class="auto-style13">
+                    <asp:TextBox ID="txtWeight" runat="server" CausesValidation="True" Width="128px"></asp:TextBox>
+&nbsp;<asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtWeight" ErrorMessage="*" ForeColor="Red" MaximumValue="180" MinimumValue="35" Type="Double"></asp:RangeValidator>
+                </td>
+                <td class="auto-style14">
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style15">
+                    <asp:Label ID="lblHeight" runat="server" Text="Height"></asp:Label>
+                </td>
+                <td class="auto-style16">
+                    <asp:TextBox ID="txtHeight" runat="server" CausesValidation="True"></asp:TextBox>
+&nbsp;&nbsp;
+                    <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="txtHeight" Display="Dynamic" ErrorMessage="*" ForeColor="Red" MaximumValue="250" MinimumValue="120" Type="Double"></asp:RangeValidator>
+                </td>
+                <td class="auto-style17">
+                    </td>
             </tr>
         </table>
         &nbsp;&nbsp;&nbsp;
