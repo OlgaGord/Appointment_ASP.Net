@@ -48,6 +48,16 @@
         <h2>
             Welcome to main page
         </h2>
+        <p>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCustomerID" ErrorMessage="ID required" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+                    <asp:RequiredFieldValidator ID="ReqValidatorID" runat="server" ErrorMessage="Last Name Required" ControlToValidate="txtLastName" BackColor="White" ForeColor="Red"></asp:RequiredFieldValidator>
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
         <table class="auto-style2">
             <tr>
                 <td class="auto-style4">
@@ -56,8 +66,9 @@
                 </td>
                 <td class="auto-style7">
                     <asp:TextBox ID="txtCustomerID" runat="server" Width="263px"></asp:TextBox>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCustomerID" ErrorMessage="ID required" ForeColor="Red"></asp:RequiredFieldValidator>
+                &nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtCustomerID" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
                 <td>
                     &nbsp;</td>
@@ -68,8 +79,9 @@
                     </td>
                 <td class="auto-style8">
                     <asp:TextBox ID="txtLastName" runat="server" Width="262px"></asp:TextBox>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="ReqValidatorID" runat="server" ErrorMessage="Last Name Required" ControlToValidate="txtLastName" BackColor="White" ForeColor="Red"></asp:RequiredFieldValidator>
+                    &nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtLastName" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
                 <td class="auto-style3">
                     </td>
