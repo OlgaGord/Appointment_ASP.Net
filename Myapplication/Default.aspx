@@ -13,18 +13,18 @@
             margin-left: 120px;
         }
         .auto-style7 {
-            width: 149px;
+            width: 518px;
         }
         .auto-style8 {
             height: 23px;
-            width: 149px;
+            width: 518px;
         }
         .auto-style9 {
             width: 174px;
             height: 25px;
         }
         .auto-style10 {
-            width: 149px;
+            width: 518px;
             height: 25px;
         }
         .auto-style11 {
@@ -56,6 +56,8 @@
                 </td>
                 <td class="auto-style7">
                     <asp:TextBox ID="txtCustomerID" runat="server" Width="263px"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtCustomerID" ErrorMessage="ID required" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>
                     &nbsp;</td>
@@ -66,9 +68,11 @@
                     </td>
                 <td class="auto-style8">
                     <asp:TextBox ID="txtLastName" runat="server" Width="262px"></asp:TextBox>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:RequiredFieldValidator ID="ReqValidatorID" runat="server" ErrorMessage="Last Name Required" ControlToValidate="txtLastName" BackColor="White" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 <td class="auto-style3">
-                    &nbsp;</td>
+                    </td>
             </tr>
                 <tr>
                 <td class="auto-style9">
