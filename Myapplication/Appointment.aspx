@@ -1,9 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Appointment.aspx.cs" Inherits="Myapplication.WebForm1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Promedic.Master" AutoEventWireup="true" CodeBehind="Appointment.aspx.cs" Inherits="Myapplication.WebForm1" %>
+<asp:Content ID="diagnosticHeadContent" ContentPlaceHolderID="masterHeadCPH" runat="server">
     <title></title>
     <style type="text/css">
         .auto-style1 {
@@ -14,15 +10,11 @@
             margin-left: 0px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <img alt="logo" class="auto-style1" src="images/Logo.png" /><br />
-            <br />
-            <br />
-        </div>
-        <h2></h2>
+
+</asp:Content>
+<asp:Content ID="diagnisticBodyContent" ContentPlaceHolderID="masterBodyCPH" runat="server">
+    <p>
+    &nbsp;</p>
         <asp:Menu ID="MainMenu" runat="server" StaticSubMenuIndent="16px">
             <Items>
                 <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
@@ -56,6 +48,6 @@
          <h3>Physician</h3>
         <asp:DropDownList ID="dddlPhysician" runat="server">
         </asp:DropDownList>
-    </form>
-</body>
-</html>
+    
+</asp:Content>
+

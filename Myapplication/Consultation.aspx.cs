@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Myapplication
 {
-    public partial class UserRegistration : System.Web.UI.Page
+    public partial class Consultation : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-    }
 
-
+        }
     }
 }
