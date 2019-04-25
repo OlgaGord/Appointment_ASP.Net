@@ -37,9 +37,7 @@
 <asp:Content ID="diagnisticBodyContent" ContentPlaceHolderID="masterBodyCPH" runat="server">
     <p>
     &nbsp;</p>
-      <div>
-
-            <table class="auto-style2">
+              <table class="auto-style2">
                 <tr>
                     <td class="auto-style18">
                         &nbsp;</td>
@@ -117,6 +115,8 @@
                     </td>
                 </tr>
             </table>
+    <p><asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+    </p>
 
 </asp:Content>
 
