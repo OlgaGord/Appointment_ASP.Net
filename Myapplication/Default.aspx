@@ -25,11 +25,7 @@
     &nbsp;</p>
 
             </p>
-        <asp:Menu ID="MainMenu" runat="server">
-            <Items>
-                <asp:MenuItem NavigateUrl="~/Appointment.aspx" Text="Appointment" Value="Appointment"></asp:MenuItem>
-            </Items>
-        </asp:Menu>
+
         <h2>
             Welcome to main page
         </h2>
