@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Promedic.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Myapplication.Default" %>
+﻿<%@ Page Title="" Language="C#" Theme="Startbootstrap" MasterPageFile="~/Promedic.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Myapplication.Default" %>
+
 <asp:Content ID="diagnosticHeadContent" ContentPlaceHolderID="masterHeadCPH" runat="server">
     
 
