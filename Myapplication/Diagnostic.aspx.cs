@@ -7,11 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace Myapplication
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class diagnostic : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string patientName = Convert.ToString(Session["Name"]);
+            lblPatientName.Text = patientName;
+            
         }
     }
 }

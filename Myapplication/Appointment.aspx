@@ -15,21 +15,20 @@
 <asp:Content ID="diagnisticBodyContent" ContentPlaceHolderID="masterBodyCPH" runat="server">
     <p>
     &nbsp;</p>
-        <asp:Menu ID="MainMenu" runat="server" StaticSubMenuIndent="16px">
-            <Items>
-                <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
-            </Items>
-        </asp:Menu>
-        <h2>Patient Appointment</h2>
-        <h3>Appointment Date</h3>
-        <h3>&nbsp;<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-        </h3>
-         <h3>Appointment start time&nbsp; </h3>
+        <h3>Patient Appointment</h3>
+        <h5>Patient Name
+            <asp:Label ID="lblPatientName" runat="server" Text="No patient selected"></asp:Label>
+    </h5>
+    <h3>&nbsp;</h3>
+    <h4>Appointment Date</h4>
+        <h5>&nbsp;<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+        </h5>
+         <h4>Appointment start time&nbsp; </h4>
         <p>
             <asp:DropDownList ID="ddlStartTime" runat="server">
             </asp:DropDownList>
         </p>
-         <h3>Appointment end time</h3>
+         <h4>Appointment end time</h4>
         <p>
             <asp:DropDownList ID="ddlEndTime" runat="server">
             </asp:DropDownList>
@@ -41,11 +40,11 @@
 &nbsp;&nbsp;
             <asp:CheckBox ID="chkConfirmed" runat="server" />
         </p>
-         <h3>Reason of Appointment</h3>
+         <h4>Reason of Appointment</h4>
         <p>
             <asp:TextBox ID="TextBox1" runat="server" Height="71px" Width="478px"></asp:TextBox>
         </p>
-         <h3>Physician</h3>
+         <h4>Physician</h4>
         <asp:DropDownList ID="dddlPhysician" runat="server">
         </asp:DropDownList>
     

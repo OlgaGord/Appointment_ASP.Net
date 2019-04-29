@@ -13,22 +13,58 @@ namespace Myapplication {
     public partial class Consultation {
         
         /// <summary>
-        /// chkWeightNotTaken control.
+        /// lblPatientName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkWeightNotTaken;
+        protected global::System.Web.UI.WebControls.Label lblPatientName;
         
         /// <summary>
-        /// chkHeightNotTaken control.
+        /// lblPutName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkHeightNotTaken;
+        protected global::System.Web.UI.WebControls.Label lblPutName;
+        
+        /// <summary>
+        /// lblConsultDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblConsultDate;
+        
+        /// <summary>
+        /// lblDateOfConsult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDateOfConsult;
+        
+        /// <summary>
+        /// txtWeightNotTaken control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtWeightNotTaken;
+        
+        /// <summary>
+        /// txtHeightNotTaken control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtHeightNotTaken;
         
         /// <summary>
         /// lblTempreture control.

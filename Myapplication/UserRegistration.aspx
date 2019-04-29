@@ -44,7 +44,7 @@
             width: 936px;
         }
 
-
+        </style>
 
 </asp:Content>
 <asp:Content ID="diagnisticBodyContent" ContentPlaceHolderID="masterBodyCPH" runat="server">
@@ -117,4 +117,5 @@
             <asp:Button ID="btnSubmit" runat="server" Text="Submit" ValidationGroup="robot" />
         </p>
 </asp:Content>
+
 

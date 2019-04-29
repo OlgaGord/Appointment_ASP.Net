@@ -78,6 +78,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Diagnostic.aspx" />
     <Content Include="images\Logo.png" />
     <Content Include="css\style.css" />
     <Content Include="images\warning.png" />
@@ -122,7 +123,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Appointment.aspx" />
-    <Content Include="Diagnistic.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consultation.aspx.cs">
@@ -138,6 +138,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostic.aspx.cs">
+      <DependentUpon>Diagnostic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diagnostic.aspx.designer.cs">
+      <DependentUpon>Diagnostic.aspx</DependentUpon>
     </Compile>
     <Compile Include="Promedic.Master.cs">
       <DependentUpon>Promedic.Master</DependentUpon>
@@ -160,13 +167,6 @@
     </Compile>
     <Compile Include="UserRegistration.aspx.designer.cs">
       <DependentUpon>UserRegistration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Diagnistic.aspx.cs">
-      <DependentUpon>Diagnistic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Diagnistic.aspx.designer.cs">
-      <DependentUpon>Diagnistic.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

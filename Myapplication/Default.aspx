@@ -214,7 +214,10 @@
         </table>
         &nbsp;&nbsp;&nbsp;
         <p class="auto-style6">
-            <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+            <asp:Button ID="btnSubmit" runat="server" Text="Set Appointment" OnClick="btnSubmit_Click" />
+         &nbsp;&nbsp;
+            <asp:Button ID="btnConsult" runat="server" OnClick="btnConsult_Click" PostBackUrl="~/Consultation.aspx" Text="Consultation" Width="109px" />
+            <asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Text="Save" />
          </br>
 
         </p>

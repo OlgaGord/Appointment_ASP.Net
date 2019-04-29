@@ -11,7 +11,15 @@ namespace Myapplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (PreviousPage !=null)
+            {
+                // lblPatientName =((TextBox)PreviousPage.FindControl("txtLastName")).Text;
+                ContentPlaceHolder MasterCPH = (ContentPlaceHolder)PreviousPage.Master.FindControl("masterBodyCPH");
+                TextBox transLN = (TextBox)MasterCPH.FindControl("txtLastName");
+                //or String lastName = ((TextBox)MasterCPH.FindControl("txtLastName")
+                TextBox transFN = (TextBox)MasterCPH.FindControl("txtFirstName");
+                lblPatientName.Text = transLN.Text + " " + transLN.Text;
+            }
         }
     }
 }
