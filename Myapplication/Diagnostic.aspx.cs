@@ -13,12 +13,31 @@ namespace Myapplication
         {
             string patientName = Convert.ToString(Session["Name"]);
             lblPatientName.Text = patientName;
-            
+            if (!IsPostBack)
+            {
+                //Boolean standTime =(Boolean)Session["Standtime"];
+                //standTime = !standTime;
+                //Session["StandTime"] = standTime;
+                //if (standTime)
+                    lblRefresh.Text = DateTime.Now.ToString("HH:mm:ss");
+                //}
+                //else
+                //{
+                //    lblRefresh.Text = DateTime.Now.ToString("hh:mm:ss tt");
+                //    System.Threading.Thread.Sleep(250);
+            }
+
+
         }
 
         protected void btnRefresh_Click(object sender, EventArgs e)
         {
             lblRefresh.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+           
         }
     }
 }

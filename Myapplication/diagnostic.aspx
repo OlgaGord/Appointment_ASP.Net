@@ -9,6 +9,7 @@
          <%--<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>--%>
     </p>
      <h4> Last updated time: </h4> <%=DateTime.Now.ToLongTimeString() %>
+
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
        
         <ContentTemplate>
@@ -16,6 +17,7 @@
             <p>
                 <asp:Button ID="btnRefresh" runat="server" OnClick="btnRefresh_Click" Text="Refresh" />
             </p>
+            <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
            
             <asp:Label ID="lblRefresh" runat ="server"></asp:Label>
         </ContentTemplate>
