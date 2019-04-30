@@ -77,6 +77,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Control\SelectMedication.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="Diagnostic.aspx" />
     <Content Include="images\Logo.png" />
@@ -85,6 +86,7 @@
     <Content Include="images\OK2.png" />
     <Content Include="images\warning.png" />
     <Content Include="js\script.js" />
+    <Content Include="Prescriptions.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -136,6 +138,13 @@
     <Compile Include="Consultation.aspx.designer.cs">
       <DependentUpon>Consultation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Control\SelectMedication.ascx.cs">
+      <DependentUpon>SelectMedication.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\SelectMedication.ascx.designer.cs">
+      <DependentUpon>SelectMedication.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,6 +158,13 @@
     </Compile>
     <Compile Include="Diagnostic.aspx.designer.cs">
       <DependentUpon>Diagnostic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prescriptions.aspx.cs">
+      <DependentUpon>Prescriptions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prescriptions.aspx.designer.cs">
+      <DependentUpon>Prescriptions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Promedic.Master.cs">
       <DependentUpon>Promedic.Master</DependentUpon>
