@@ -19,25 +19,26 @@ namespace Myapplication
                 //standTime = !standTime;
                 //Session["StandTime"] = standTime;
                 //if (standTime)
-                    lblRefresh.Text = DateTime.Now.ToString("HH:mm:ss");
+                //  lblRefresh.Text = DateTime.Now.ToString("HH:mm:ss");
                 //}
                 //else
                 //{
-                //    lblRefresh.Text = DateTime.Now.ToString("hh:mm:ss tt");
+                    lblRefresh.Text = DateTime.Now.ToString("hh:mm:ss tt");
                 //    System.Threading.Thread.Sleep(250);
+                //Response.Redirect("Default.aspx");
             }
 
 
         }
 
-        protected void btnRefresh_Click(object sender, EventArgs e)
-        {
-            lblRefresh.Text = DateTime.Now.ToLongTimeString();
-        }
+        //protected void btnRefresh_Click(object sender, EventArgs e)
+        //{
+        //    lblRefresh.Text = DateTime.Now.ToLongTimeString();
+        //}
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-           
+            Response.Redirect("Default.aspx");
         }
     }
 }

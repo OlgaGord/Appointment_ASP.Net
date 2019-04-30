@@ -15,14 +15,17 @@
         <ContentTemplate>
             <h4>Last updated time:</h4>  <%=DateTime.Now.ToLongTimeString() %>
             <p>
-                <asp:Button ID="btnRefresh" runat="server" OnClick="btnRefresh_Click" Text="Refresh" />
+                <%--<asp:Button ID="btnRefresh" runat="server" OnClick="btnRefresh_Click" Text="Refresh" />--%>
+                <asp:Button ID="btnRefresh" runat="server" Text="Refresh" />
             </p>
-            <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="1000"></asp:Timer>
-           
+            <asp:Timer ID="Timer1" runat="server" OnTick="Timer1_Tick" Interval="5000"></asp:Timer>
+                       
             <asp:Label ID="lblRefresh" runat ="server"></asp:Label>
+           <%-- <asp:Timer ID="Timer2" runat="server" OnTick="Timer2_Tick" Interval="5000"></asp:Timer>--%>
         </ContentTemplate>
         <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="btnRefresh" EventName="Click" />
+            <%--<asp:AsyncPostBackTrigger ControlID="btnRefresh" EventName="Click" />--%>
+             <asp:AsyncPostBackTrigger ControlID="btnRefresh" />
         </Triggers>
        </asp:UpdatePanel>
      <ajaxToolkit:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">

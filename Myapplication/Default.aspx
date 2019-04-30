@@ -95,7 +95,8 @@
                     <asp:Label ID="lblDoB" runat="server" Text="Date of Birth"></asp:Label>
                 </td>
                 <td class="auto-style8">
-                    <asp:TextBox ID="txtDOB" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtDOB" runat="server" ReadOnly="True"></asp:TextBox>
+                    <ajaxToolkit:CalendarExtender ID="txtDOB_CalendarExtender" runat="server" BehaviorID="txtDOB_CalendarExtender" TargetControlID="txtDOB" />
                     <asp:Label ID="lblAge" runat="server" Text="Age"></asp:Label>
 &nbsp;
                     <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
