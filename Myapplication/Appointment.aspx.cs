@@ -11,7 +11,7 @@ namespace Myapplication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (PreviousPage !=null)
+            if (PreviousPage != null)
             {
                 // lblPatientName =((TextBox)PreviousPage.FindControl("txtLastName")).Text;
                 ContentPlaceHolder MasterCPH = (ContentPlaceHolder)PreviousPage.Master.FindControl("masterBodyCPH");
@@ -20,6 +20,33 @@ namespace Myapplication
                 TextBox transFN = (TextBox)MasterCPH.FindControl("txtFirstName");
                 lblPatientName.Text = transLN.Text + " " + transLN.Text;
             }
+            // Loading values to ddls
+            if (!IsPostBack)
+                loadVals();
+
         }
+          
+        protected void loadVals()
+        {
+
+            // Fill appointment physician
+            List<string> Doctors = new List<string>() { "", "Dr. Morissette", "Dr. Binette", "Dr. Lomi" };
+            foreach (string doc in Doctors)
+            {
+                ddlPhysician.Items.Add(doc);
+            }
+        }
+        protected void ValCustmAppintment_Server(object sender, ServerValidateEventArgs e)
+        {
+            e.IsValid = chkConfirmed.Checked;
+        }
+
+        protected void ibtnConfirm_Click(object sender, ImageClickEventArgs e)
+        {
+            txtApptDateTimeSh.Text = UCAppTiming.txtApptDateTime;
+        }
+
     }
+
 }
+
