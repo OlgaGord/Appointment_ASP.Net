@@ -47,11 +47,10 @@ D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\roslyn\vbc.exe.conf
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\roslyn\vbc.rsp
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\roslyn\VBCSCompiler.exe
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\roslyn\VBCSCompiler.exe.config
+D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\AjaxControlToolkit.dll
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\obj\Debug\Myapplication.csproj.CoreCompileInputs.cache
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\obj\Debug\Myapplication.csproj.CopyComplete
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\obj\Debug\Myapplication.dll
 D:\heritage\ASP.NET\projects\Myapplication\Myapplication\obj\Debug\Myapplication.pdb
-D:\heritage\ASP.NET\projects\Myapplication\Myapplication\obj\Debug\Myapplication.csprojAssemblyReference.cache
-D:\heritage\ASP.NET\projects\Myapplication\Myapplication\bin\AjaxControlToolkit.dll
