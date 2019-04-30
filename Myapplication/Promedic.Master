@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    
     <asp:ContentPlaceHolder ID="masterHeadCPH" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -16,7 +17,7 @@
         <div>
             <h2>
                 <img alt="logo" class="auto-style1" src="images/Logo.png" /></h2>
-            <br />
+             <br />
                     <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" Value="Home"></asp:MenuItem>
@@ -29,6 +30,7 @@
                     </Items>
                 </asp:Menu>
             <asp:ContentPlaceHolder ID="masterBodyCPH" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                 <br />
             </asp:ContentPlaceHolder>
         </div>
