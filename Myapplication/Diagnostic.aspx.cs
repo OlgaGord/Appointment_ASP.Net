@@ -15,5 +15,10 @@ namespace Myapplication
             lblPatientName.Text = patientName;
             
         }
+
+        protected void btnRefresh_Click(object sender, EventArgs e)
+        {
+            lblRefresh.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }
