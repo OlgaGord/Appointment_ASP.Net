@@ -35,5 +35,20 @@ namespace Myapplication
         {
 
         }
+
+        protected void ibtnNew_Consultation_Click(object sender, ImageClickEventArgs e)
+        {
+            ContentPlaceHolder masterCPH = (ContentPlaceHolder)this.Master.FindControl("masterBodyCPH");
+            Label lblConstDate = new Label();
+            TextBox txtConstDate = new TextBox();
+            lblConstDate.Text = "Consultation/DateTime";
+            txtConstDate.Text = DateTime.Now.ToString();
+            //Controls.Add(lblConstDate); //works with single page
+            //Controls.Add(txtConstDate);  //works with single page
+            masterCPH.Controls.Add(lblConstDate);  //adding controls to content place holder
+            masterCPH.Controls.Add(txtConstDate);   //adding controls to content place holder
+
+
+        }
     }
 }

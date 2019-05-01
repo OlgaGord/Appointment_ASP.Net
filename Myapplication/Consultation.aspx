@@ -138,6 +138,9 @@
                 </tr>
             </table>
     <p><asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+    &nbsp;</p>
+    <p>Start consultation:&nbsp;&nbsp;
+        <asp:ImageButton ID="ibtnNew_Consultation" runat="server" ImageUrl="~/images/OK2.png" OnClick="ibtnNew_Consultation_Click" />
     </p>
 
 </asp:Content>
